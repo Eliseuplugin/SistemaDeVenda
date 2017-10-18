@@ -35,13 +35,35 @@
 							<h3>'.$fila['Marca'].'</h3>
 							<p>'.$fila['NomeProd'].'</p>
 							<p>$'.$fila['Preco'].'</p>
-							<p class="text-center">'
+							<p class="text-center">
+								<a href="infoProd.php?CodigoProd='.$fila['CodigoProd'].'"class="btn btn-primary btn-sm"><i class="fa fa-plus"></i>&nbsp; Detalhes</a>&nbsp;&nbsp;
+								<button value="'.$fila['CodigoProd'].'" class="btn btn-success btn-sm botaoCarrinho"><i class"fa fa-shopping-cart"></i>&nbsp; Adicionar</button>
+								</p>
+
+								</div>
+								</div>
+								</div>
+								';
 					}
 				} else {
-					# code...
+					echo '<h2>Nao ha produtos adicionado na lista</h2>';
 				}
+				?>
 				
-				
+			</div>
+		</div>
+	</section>
+	<section id="reg-info-index">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 text-center">
+					<article style="margin-top:20%;">
+						<p><i class="fa fa-users fa-4x"></i></p>
+						<h3></h3>
+						<p><span></span></p>
+						<p><a href=""></a></p>
+					</article>
+				</div>
 			</div>
 		</div>
 	</section>
