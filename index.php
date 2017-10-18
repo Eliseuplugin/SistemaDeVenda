@@ -64,14 +64,28 @@
 						<p><a href="registration.php" class="btn btn-info btn-block">Registrar-se</a></p>
 					</article>
 				</div>
-			</div class="col-xs-12 col-sm-6">
+			<div class="col-xs-12 col-sm-6">
 					<img src="assets/img/nomeda imagem" alt="" class="img-responsive">
-				</div>
-				</div>
-
+			</div>
+		</div>
+		</div>
 		</div>
 	</section>
+	<section id="distribuidores-index">
+		<div class="container">
+			<div class="col-xs-12 col-sm-6">
+				
+			</div>
+			<div class="col-xs-12">
+				<div class="page-header">
+					<h1>Nossos <small style="color: #433;">Patrocinadores</small></h1>
+				</div>
+				<br><br>
+				<img src="assets/img/nome" alt="logos-marcas" class="img-responsive">
+			</div>
+		</div>
+		
 	</section>
-
+<?php include './inc/rodape.php';?>
 </body>
 </html>
