@@ -59,13 +59,18 @@
 				<div class="col-xs-12 col-sm-6 text-center">
 					<article style="margin-top:20%;">
 						<p><i class="fa fa-users fa-4x"></i></p>
-						<h3></h3>
-						<p><span></span></p>
-						<p><a href=""></a></p>
+						<h3>Registrar</h3>
+						<p>Registrar e adicionar cliente <span class="tittles-pages-logo">Dep.Vendas</span>para receber as melhores ofertas e descontos especiais de nossos produtos.</p>
+						<p><a href="registration.php" class="btn btn-info btn-block">Registrar-se</a></p>
 					</article>
 				</div>
-			</div>
+			</div class="col-xs-12 col-sm-6">
+					<img src="assets/img/nomeda imagem" alt="" class="img-responsive">
+				</div>
+				</div>
+
 		</div>
+	</section>
 	</section>
 
 </body>
