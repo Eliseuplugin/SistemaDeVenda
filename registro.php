@@ -18,6 +18,11 @@
 						<p class="lead">
 							Todos os registrados receberao notificacoes de nossos produtos e ofertas mais recentes em nossa loja
 						</p>
+						<br>
+						<img src="assets/img/nomedaimagem.png" alt="pastas" class="img-responsive">
+					</div>
+					<div class="col-xs-12 col-sm-6">
+						
 					</div>
 				</div>
 			</div>
