@@ -124,6 +124,24 @@ if (!isset($_SESSION['contador'])) {
 					<label><span class="glyphicon glyphicon-lock"></span>&nbsp;Senha</label>
 					<input type="text" class="form-control" name="nome-login" placeholder="Digite sua senha" required=""/>
 				</div>
+				<p>Como iniciara a sessao?</p>
+				<div class="radio">
+					<label>
+						<input type="radio" name="optionsRadios" value="option1" checked>
+						Usuario
+					</label>
+				</div>
+				<div class="radio">
+					<label>
+						<input type="radio" name="optionsRadios" value="option2">
+						Administrador
+					</label>
+				</div>
+				<div class="modal-footer">
+					<button type="submit" class="btn btn-primary btn-sm">Iniciar a sessao</button>
+					<button type="button" class="btn btn-danger btn-sm" data-dismiss>Cancelar</button>
+				</div>
+				<div class="ResFormL" style="width: 100%; text-align: center; margin: 0;"></div>
 			</form>
 		</div>
 	</div>
