@@ -78,7 +78,7 @@
                         <div class="form-group">
 									<div class="input-group">
                                 <div class="input-group-addon"><i class="fa fa-at"></i></div>
-                                <input class="form-control all-elements-tooltip"  type="email" placeholder="Digite o seu E-mail" required name="clien-email" data-toggle="tooltip" data-placement="top" title="Digite o enederco de seu E-mail" maxlength="50">
+                                <input class="form-control all-elements-tooltip"  type="email" placeholder="Digite o seu E-mail" required name="clien-email" data-toggle="tooltip" data-placement="top" title="Digite o endereco de seu E-mail" maxlength="50">
                             </div>
                         </div>
                         <br>
