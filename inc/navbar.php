@@ -163,8 +163,42 @@ if (!isset($_SESSION['contador'])) {
 			echo '<li><a href="configAdmin.php">Administracao</a></li>';
 		}elseif (!$_SESSION['nomeUser']=="") {
 			echo '<li><a href="pedido.php">Pedido</a></li>';
-		}elseif () {
+		}else {
 			echo '<li><a href="registro.php">Registro</a></li>';
 		}
+		?>
 	</ul>
 </div>
+<!-- modelo de carrinho
+ -->
+
+ <div class="modal fade modal-carrinho" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" style="padding: 20px;">
+ 	<div class="modal-dialog modal-sm">
+ 		<div class="modal-content">
+ 			<br>
+ 			<p class="text-center"><i class="fa fa-shopping-cart fa-5x"></i></p>
+ 			<p class="text-center">O produto foi adicionado ao carrinho</p>
+ 			<p class="text-center"><button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">Aceitar</button></p>
+ 		</div>
+ 	</div>
+ </div>
+
+<!--  fim do modelo de carrinho -->
+
+<!-- Modelo logout -->
+
+ <div class="modal fade modal-logout" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" style="padding: 20px;">
+ 	<div class="modal-dialog modal-sm">
+ 		<div class="modal-content">
+ 			<br>
+ 			<p class="text-center">Quer terminar a sessao?</p>
+ 			<p class="text-center"><i class="fa fa-exclamation-triangule fa-5x"></i></p>
+ 			<p class="text-center">
+ 				<a href="process/logout.php" class="btn btn-primary btn-sm">Terminar a sessao</a>
+ 				<button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">Cancelar</button>
+ 			</p>
+ 		</div>
+ 	</div>
+ </div>
+
+<!--  Fim do modelo logout -->
