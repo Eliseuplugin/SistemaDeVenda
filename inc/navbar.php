@@ -146,3 +146,25 @@ if (!isset($_SESSION['contador'])) {
 		</div>
 	</div>
 </div>
+
+<!-- Fim do modelo Login -->
+<div id="mobile-menu-list" class="hidden-sm hidden-md hidden-lg">
+	<br>
+	<h3 class="text-center tittles-pages-logo">Dep.Vendas</h3>
+	<button class="btn btn-default button-mobile-menu" id="button-close-mobile-menu">
+		<i class="fa fa-times"></i>
+	</button>
+	<br><br>
+	<ul class="list-unstyled text-center">
+		<li><a href="index.php">Inicio</a></li>
+		<li><a href="index.php">Produtos</a></li>
+		<?php 
+		if (!$_SESSION['nomeAdmin']=="") {
+			echo '<li><a href="configAdmin.php">Administracao</a></li>';
+		}elseif (!$_SESSION['nomeUser']=="") {
+			echo '<li><a href="pedido.php">Pedido</a></li>';
+		}elseif () {
+			echo '<li><a href="registro.php">Registro</a></li>';
+		}
+	</ul>
+</div>
