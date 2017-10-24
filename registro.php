@@ -55,8 +55,35 @@
 								<div class="form-group">
 									<div class="input-group">
                                 <div class="input-group-addon"><i class="fa fa-lock"></i></div>
-                                <input class="form-control all-elements-tooltip" type="password" placeholder="Digite uma senha" required name="clien-pass">
+                                <input class="form-control all-elements-tooltip" type="password" placeholder="Digite uma senha" required name="clien-pass" data-toggle="tooltip" data-placement="top" title="Defina uma senha para iniciar a sessao">
 								</div>
+							</div>
+							<br>
+							<div class="form-group">
+								<div class="input-group">
+									<div class="input-group-addon"><i class="fa fa-home"></i>
+										
+									</div>
+									<input class="form-control all-elements-tooltip" type="text" placeholder="Digite o seu endereco" required name="clien-end" data-toggle="tooltip" data-placement="top" title="Digite o seu endereco atual" maxlength="100">
+								</div>
+							</div>
+							<br>
+							<div class="form-group">
+									<div class="input-group">
+                                <div class="input-group-addon"><i class="fa fa-mobile"></i></div>
+                                <input class="foorm-control all-elements-tooltip" type="tel" placeholder="Digite o seu numero de telefone" required name="clien-phone" maxlength="9" pattern="[0-9]{7-9}" data-toggle="tooltip" data-placement="top" title="Digite o numero do seu telefone. Minimo 7 digitos e maximo 9">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-group">
+									<div class="input-group">
+                                <div class="input-group-addon"><i class="fa fa-at"></i></div>
+                                <input class="form-control all-elements-tooltip"  type="email" placeholder="Digite o seu E-mail" required name="clien-email" data-toggle="tooltip" data-placement="top" title="Digite o enederco de seu E-mail" maxlength="50">
+                            </div>
+                        </div>
+                        <br>
+                        <p><button type="submit" class="btn btn-sucess btn-block"><i class="fa -fa-pencil"></i>&nbsp;Registra-se</button></p>
+                        <div class="ResForm" style="width: 100%; color: #fff; text-align: center;margin: 0;"></div>
 							</form>
 						</div>
 						
@@ -64,5 +91,6 @@
 				</div>
 			</div>
 		</section>
+		<?php include './inc/rodape.php';?>
 </body>
 </html>
