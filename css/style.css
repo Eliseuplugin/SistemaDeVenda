@@ -29,19 +29,19 @@ nav{
     box-shadow: 2px 0px 7px #000;
 	z-index: 50;
 }
-.contenedor-tabla{
+.recipiente-tabela{
     display: table;
     width: 100%;
 }
-.contenedor-tr {
+.recipiente-tr {
   display: table-row;
   width: 100%;
 }
-.contenedor-tr > a{
+.recipiente-tr > a{
 	text-decoration: none;
 	color: #fff;
 }
-.contenedor-tr > a:hover{
+.recipiente-tr > a:hover{
 	background-color: rgba(173, 0, 0,.7);
     transition: background-color .4s ease-in;
     -moz-transition: background-color .4s ease-in;
@@ -49,7 +49,7 @@ nav{
     -ms-transition: background-color .4s ease-in;
     -o-transition: background-color .4s ease-in;
 }
-.contenedor-tr > a:last-child{
+.recipiente-tr > a:last-child{
 	border-right: 1px solid rgba(149, 165, 166,0.8);
 }
 .table-cell-td {
@@ -123,11 +123,11 @@ footer{
     margin-left: auto;
     margin-right: auto;
 }
-#carrito-compras-tienda{
+#carrinho-compras-loja{
     width: 100%;
     padding: 20px;
 }
-#container-carrito-compras{
+#container-carrinho-compras{
    background-color: rgb(43, 29, 29);
    color:#fff;
    display: none;
