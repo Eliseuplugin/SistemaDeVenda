@@ -24,6 +24,6 @@ if ($num>0) {
 
 		// Inserindo dados em uma tabela de venda
 
-		consultasSQL::InsertSQL("venda", "Data")
+		consultasSQL::InsertSQL("venda", "Data, NUIT, Desconto, TotalPagar, Status", "'".date('d-m-Y')."','".$nuitC."','0','".$_SESSION['sumaTotal']."','".$StatusV."'");
 	}
 }
