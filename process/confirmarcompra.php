@@ -25,5 +25,11 @@ if ($num>0) {
 		// Inserindo dados em uma tabela de venda
 
 		consultasSQL::InsertSQL("venda", "Data, NUIT, Desconto, TotalPagar, Status", "'".date('d-m-Y')."','".$nuitC."','0','".$_SESSION['sumaTotal']."','".$StatusV."'");
+
+		// Recuperacao do numero de pedido atual
+		$verId=executarSQL::consultar("select * from venda where NUIT='$nuitC' order by NumPedido desc limit 1");
+		while ($fila=mysql_fetch_array($verId)) {
+			$NumPedido=$fial['NumPedido'];
+		}
 	}
 }
