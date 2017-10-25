@@ -31,5 +31,9 @@ if ($num>0) {
 		while ($fila=mysql_fetch_array($verId)) {
 			$NumPedido=$fial['NumPedido'];
 		}
+
+		for ($i=0; $i < ; $_SESSION['contador'];$i++) { 
+			consultasSQL::InsertSQL("detalhe", "NumPedido, CodigoProd, QuantidadeProduto", "'$NumPedido','".$_SESSION['produto'][$i]."', '1'");
+		}
 	}
 }
