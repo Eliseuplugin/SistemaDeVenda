@@ -34,6 +34,24 @@ if ($num>0) {
 
 		for ($i=0; $i < ; $_SESSION['contador'];$i++) { 
 			consultasSQL::InsertSQL("detalhe", "NumPedido, CodigoProd, QuantidadeProduto", "'$NumPedido','".$_SESSION['produto'][$i]."', '1'");
+
+			//Resto de quantidade de cada produto no carrinho
+			$prodStock=executarSQL::consultar("select * from produto where CodigoProd='".$_SESSION['produto'][$i]."'");
+			while ($fila = mysql_fetch_array($prodStock)) {
+				$existencias = $fila['Stock'];
+				consultasSQL::UpdateSQL("produto", "Stock=('$existencias'-1)", "CodigoProd='".$_SESSION['produto'][$i]."'");
+			}
 		}
+		// Esvaziando o carrinho
+		unset($_SESSION['produto']);
+		unset($_SESSION['contador']);
+
+		echo '<img src="assets/img/ok.png" class="center-all-contens"><br>O pedido foi realizado com exito';
+	}else{
+		echo '<img src="assets/img/error.png" class="center-all-contens"><br>Nao foi selecionado nenhum produto, visualize o seu carrinho de compras';
 	}
-}
+
+	}else{
+		echo '<img src="assets/img/error.png" class="center-all-contens"><br>O nome da contra-senha e invalido';
+	}
+	
