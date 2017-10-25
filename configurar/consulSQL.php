@@ -23,7 +23,26 @@ class executarSQL {
 		}
 		return $consul;
 		}
-	{
-		# code...
-	}
+	
+}
+// Classe para fazer as consultas, inserir, eliminar e atualizar
+
+/**
+* 
+*/
+class consultasSQL{
+	
+  public static	function InsertSQL($tabela, $campo, $valores) {
+  	if (!$consul = executarSQL::consultar("insert into $tabela ($campos) VALUES($valores)")) {
+  		die("Ocorreu um erro em inserir os dados na tabela $tabela");
+  	}
+  	return $consul;
+  }
+  public static function DeleteSQL($tabela, $condicao) {
+  	if (!$consul = executarSQL::consultar("delete from $tabela where $condicao")) {
+  		die("Ocorreu um erro em eliminar os registros da tabela");
+  	}
+  	return $consul;
+  }
+	
 }
